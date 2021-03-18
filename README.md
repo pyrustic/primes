@@ -1,1 +1,1 @@
-[Pyrustic](https://github.com/pyrustic/pyrustic)
+Discover [Pyrustic](https://github.com/pyrustic/pyrustic) !
