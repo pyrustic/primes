@@ -4,8 +4,10 @@ from pyrustic.widget.toast import Toast
 from pyrustic.widget.confirm import Confirm
 from primes.misc.events import Events
 
-class FooterView(View):
-    def __init__(self, master, com=None):
+
+class BottomView(View):
+
+    def __init__(self, master, com):
         super().__init__()
         self._master = master
         self._com = com
@@ -19,7 +21,7 @@ class FooterView(View):
 
     def _setup(self):
         consumer = lambda event, data, self=self: self._set_button_clear()
-        self._com.sub(Events.gui_stop_displaying, consumer)
+        self._com.sub(Events.gui_end_displaying, consumer)
 
     def _on_build(self):
         self._body = tk.Frame(self._master)
@@ -63,8 +65,6 @@ class FooterView(View):
         number = self._check_number()
         if not number:
             self._strvar_number.set("")
-            return
-        if not self._com:
             return
         self._entry_number.config(state="readonly")
         self._set_button_stop()
@@ -123,5 +123,5 @@ class FooterView(View):
 
 if __name__ == "__main__":
     root = tk.Tk()
-    FooterView(root).build_pack(fill=tk.X)
+    BottomView(root).build_pack(fill=tk.X)
     root.mainloop()

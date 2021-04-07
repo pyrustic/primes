@@ -1,5 +1,5 @@
 from pyrustic.app import App
-from tk_cyberpunk_theme import Cyberpunk
+from tk_cyberpunk_theme.main import Cyberpunk
 from primes.view.main_view import MainView
 
 

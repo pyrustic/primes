@@ -1,47 +1,41 @@
-import time
+from pyrustic.threadom import Threadom
+from primes.misc.events import Events
+from primes.core.primes_generator import PrimesGenerator
 
 
 class MainHost:
-    def __init__(self):
-        self._cache = True
-        self._processing = False
 
-    @property
-    def cache(self):
-        return self._cache
+    def __init__(self, app, com):
+        self._app = app
+        self._com = com
+        self._threadom = Threadom(self._app.root)
+        self._primes_generator = PrimesGenerator()
+        self._qid = None
+        self._setup()
 
-    @cache.setter
-    def cache(self, val):
-        self._cache = val
+    def _setup(self):
+        self._com.event_handler(self)
 
-    def compute(self, number, queue):
-        if self._processing:
-            return
-        self._processing = True
-        count = 0
-        for prime in self._primes_generator(number):
-            count += 1
-            if not self._processing:
-                self._stop_computation(queue)
-                return False
-            queue.put(prime)
-            time.sleep(0.01)
-        self._stop_computation(queue)
-        return True
+    def _on_user_submit_number(self, event, data):
+        queue = self._threadom.q()
+        target = self._primes_generator.compute
+        target_args = (data, queue)
+        # run computation in a new thread
+        consumer = (lambda data, self=self:
+                        self._com.pub(Events.core_end_computation, data))
+        self._threadom.run(target, target_args=target_args,
+                           consumer=consumer)
+        # consume the data pushed into the queue by the computation thread
+        consumer = (lambda data, self=self:
+                        self._com.pub(Events.host_send_prime, data))
+        self._qid = self._threadom.consume(queue, consumer=consumer)
 
-    def stop(self):
-        self._processing = False
+    def _on_gui_end_displaying(self, event, data):
+        self._threadom.stop(self._qid)
+        self._qid = None
 
-    def _primes_generator(self, number):
-        for num in range(number + 1):
-            if num <= 1:
-                continue
-            for i in range(2, num):
-                if (num % i) == 0:
-                    break
-            else:
-                yield num
+    def _on_user_click_stop(self, event, data):
+        self._primes_generator.stop()
 
-    def _stop_computation(self, queue):
-        queue.put(None)
-        self._processing = False
+    def _on_user_click_exit(self, event, data):
+        self._app.exit()

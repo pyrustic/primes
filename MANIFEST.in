@@ -1,2 +1,2 @@
-recursive-include hubstore *
+recursive-include primes *
 global-exclude *.py[cod]
