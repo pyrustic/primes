@@ -3,13 +3,11 @@
 
 [primes.\_\_init\_\_](https://github.com/pyrustic/primes/blob/master/docs/reference/content/primes.\_\_init\_\_.md) 
 <br>
- little doc for thhis
-I guess
+ 
 
 [primes.\_\_main\_\_](https://github.com/pyrustic/primes/blob/master/docs/reference/content/primes.\_\_main\_\_.md) 
 <br>
- Elon must
-est bon
+ 
 
 [primes.core.\_\_init\_\_](https://github.com/pyrustic/primes/blob/master/docs/reference/content/primes.core.\_\_init\_\_.md) 
 <br>
