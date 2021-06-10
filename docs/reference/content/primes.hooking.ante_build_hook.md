@@ -1,9 +1,9 @@
 
-Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
+Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference#README)
 
 # primes.hooking.ante\_build\_hook
 
-\- No docstring \-
+\- No description \-
 
 <br>
 
