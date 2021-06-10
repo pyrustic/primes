@@ -32,7 +32,7 @@ def get_data():
 
 def get_jayson(pyrustic_data_path, config_name, readonly):
     """
-    - No text -
+    
     """
 
 ```
@@ -43,7 +43,7 @@ def get_jayson(pyrustic_data_path, config_name, readonly):
 
 def get_pyrustic_data_path(data):
     """
-    - No text -
+    
     """
 
 ```
@@ -54,7 +54,7 @@ def get_pyrustic_data_path(data):
 
 def get_release_description(target, owner, repo):
     """
-    - No text -
+    
     """
 
 ```
@@ -65,7 +65,7 @@ def get_release_description(target, owner, repo):
 
 def main():
     """
-    - No text -
+    
     """
 
 ```
@@ -76,7 +76,7 @@ def main():
 
 def update_release_jayson(target, release_jayson, build_report_jayson, app_pkg, version):
     """
-    - No text -
+    
     """
 
 ```

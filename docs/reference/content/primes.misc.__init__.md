@@ -8,7 +8,3 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 <br>
 
 
-```python
-
-```
-

@@ -10,12 +10,6 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 ```python
 
-```
-
-<br>
-
-```python
-
 class CenterView:
     """
     Subclass this if you are going to create a view.
@@ -61,12 +55,12 @@ class CenterView:
 
     def clear(self):
         """
-        - No text -
+        
         """
 
     def display(self, number):
         """
-        - No text -
+        
         """
 
 ```

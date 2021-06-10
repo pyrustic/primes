@@ -10,15 +10,9 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 ```python
 
-```
-
-<br>
-
-```python
-
 class MainHost:
     """
-    - No text -
+    
     """
 
     def __init__(self, app, com):

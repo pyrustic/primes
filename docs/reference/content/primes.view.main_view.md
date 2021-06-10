@@ -10,12 +10,6 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 ```python
 
-```
-
-<br>
-
-```python
-
 class MainView:
     """
     Subclass this if you are going to create a view.

@@ -10,12 +10,6 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 ```python
 
-```
-
-<br>
-
-```python
-
 def get_data():
     """
     Return None or a dict with the keys:
@@ -30,7 +24,7 @@ def get_data():
 
 def main():
     """
-    - No text -
+    
     """
 
 ```

@@ -10,15 +10,9 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 ```python
 
-```
-
-<br>
-
-```python
-
 class PrimesGenerator:
     """
-    - No text -
+    
     """
 
     def __init__(self):
@@ -28,12 +22,12 @@ class PrimesGenerator:
 
     def compute(self, number, queue):
         """
-        - No text -
+        
         """
 
     def stop(self):
         """
-        - No text -
+        
         """
 
 ```

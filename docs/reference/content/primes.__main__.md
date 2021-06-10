@@ -10,15 +10,9 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 ```python
 
-```
-
-<br>
-
-```python
-
 def main():
     """
-    - No text -
+    
     """
 
 ```

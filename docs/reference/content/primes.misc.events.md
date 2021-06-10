@@ -10,15 +10,9 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 ```python
 
-```
-
-<br>
-
-```python
-
 class Events:
     """
-    - No text -
+    
     """
 
     core_end_computation = "core end computation"
