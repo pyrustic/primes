@@ -1,3 +1,7 @@
+"""
+Elon must
+est bon
+"""
 from pyrustic.app import App
 from cyberpunk_theme import Cyberpunk
 from primes.view.main_view import MainView
