@@ -1,9 +1,9 @@
 
 Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
 
-# primes.view.center_view
+# primes.view.center\_view
 
-primes.view.center_view
+None
 
 <br>
 
@@ -61,12 +61,12 @@ class CenterView:
 
     def clear(self):
         """
-- No text -
+        - No text -
         """
 
     def display(self, number):
         """
-- No text -
+        - No text -
         """
 
 ```

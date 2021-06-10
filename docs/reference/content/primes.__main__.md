@@ -1,9 +1,9 @@
 
 Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
 
-# primes.__main__
+# primes.\_\_main\_\_
 
-primes.__main__
+None
 
 <br>
 
@@ -18,7 +18,7 @@ primes.__main__
 
 def main():
     """
-- No text -
+    - No text -
     """
 
 ```

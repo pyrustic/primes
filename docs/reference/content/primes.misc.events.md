@@ -3,7 +3,7 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 # primes.misc.events
 
-primes.misc.events
+None
 
 <br>
 
@@ -18,7 +18,7 @@ primes.misc.events
 
 class Events:
     """
-- No text -
+    - No text -
     """
 
     core_end_computation = "core end computation"

@@ -1,9 +1,9 @@
 
 Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
 
-# primes.hooking.ante_build_hook
+# primes.hooking.ante\_build\_hook
 
-primes.hooking.ante_build_hook
+None
 
 <br>
 
@@ -30,7 +30,7 @@ def get_data():
 
 def main():
     """
-- No text -
+    - No text -
     """
 
 ```

@@ -1,9 +1,9 @@
 
 Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
 
-# primes.core.primes_generator
+# primes.core.primes\_generator
 
-primes.core.primes_generator
+None
 
 <br>
 
@@ -18,7 +18,7 @@ primes.core.primes_generator
 
 class PrimesGenerator:
     """
-- No text -
+    - No text -
     """
 
     def __init__(self):
@@ -28,12 +28,12 @@ class PrimesGenerator:
 
     def compute(self, number, queue):
         """
-- No text -
+        - No text -
         """
 
     def stop(self):
         """
-- No text -
+        - No text -
         """
 
 ```

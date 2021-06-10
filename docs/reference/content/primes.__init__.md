@@ -1,9 +1,9 @@
 
 Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
 
-# primes.__init__
+# primes.\_\_init\_\_
 
-primes.__init__
+None
 
 <br>
 

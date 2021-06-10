@@ -1,9 +1,9 @@
 
 Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
 
-# primes.hooking.post_release_hook
+# primes.hooking.post\_release\_hook
 
-primes.hooking.post_release_hook
+None
 
 <br>
 
@@ -42,7 +42,7 @@ def get_date():
 
 def main():
     """
-- No text -
+    - No text -
     """
 
 ```
