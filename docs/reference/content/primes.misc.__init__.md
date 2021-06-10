@@ -3,7 +3,7 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 # primes.misc.\_\_init\_\_
 
-None
+- No docstring -
 
 <br>
 
