@@ -3,7 +3,7 @@ Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs
 
 # primes.hooking.post\_build\_hook
 
-- No docstring -
+\- No docstring \-
 
 <br>
 
