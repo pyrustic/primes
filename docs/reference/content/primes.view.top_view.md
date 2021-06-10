@@ -1,5 +1,5 @@
 
-Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference#README)
+Back to [Reference Overview](https://github.com/pyrustic/primes/blob/master/docs/reference)
 
 # primes.view.top\_view
 
