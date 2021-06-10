@@ -1,11 +1,15 @@
 from pyrustic.app import App
-from tk_cyberpunk_theme.main import Cyberpunk
+from cyberpunk_theme import Cyberpunk
 from primes.view.main_view import MainView
 
 
 def main():
     # The App
-    app = App(__package__)
+    app = App()
+    # Title
+    app.title = "Hubstore"
+    # Resizable
+    app.resizable = (False, False)
     # Set theme
     app.theme = Cyberpunk()
     # Set view

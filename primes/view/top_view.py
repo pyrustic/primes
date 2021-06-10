@@ -1,9 +1,9 @@
 import tkinter as tk
-from pyrustic.view import View
+from viewable import Viewable
 from primes.misc.events import Events
 
 
-class TopView(View):
+class TopView(Viewable):
 
     def __init__(self, master, com):
         super().__init__()
@@ -34,7 +34,7 @@ class TopView(View):
                     self._on_user_click_clear())
         self._com.sub(Events.user_click_clear, consumer)
 
-    def _on_build(self):
+    def _build(self):
         self._body = tk.Label(self._master,
                               textvariable=self._strvar)
 

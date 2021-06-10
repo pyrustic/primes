@@ -1,10 +1,10 @@
 import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
-from pyrustic.view import View
+from viewable import Viewable
 from primes.misc.events import Events
 
 
-class CenterView(View):
+class CenterView(Viewable):
     def __init__(self, master, com):
         super().__init__()
         self._master = master
@@ -39,19 +39,13 @@ class CenterView(View):
                     self.clear())
         self._com.sub(Events.user_click_clear, consumer)
 
-    def _on_build(self):
+    def _build(self):
         self._body = ScrolledText(self._master,
                                   wrap="word",
                                   width=self._line_width,
                                   height=18,
                                   padx=10, pady=10,
                                   state="disabled")
-
-    def _on_display(self):
-        pass
-
-    def _on_destroy(self):
-        pass
 
     def _write(self, *text):
         self._body.config(state="normal")

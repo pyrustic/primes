@@ -1,13 +1,13 @@
 import tkinter as tk
-from pyrustic.view import View
-from pyrustic.com import Com
+from viewable import Viewable
+from diaspora import Diaspora
 from primes.view.top_view import TopView
 from primes.view.center_view import CenterView
 from primes.view.bottom_view import BottomView
 from primes.host.main_host import MainHost
 
 
-class MainView(View):
+class MainView(Viewable):
     def __init__(self, app):
         super().__init__()
         self._app = app
@@ -18,10 +18,10 @@ class MainView(View):
         self._setup()
 
     def _setup(self):
-        self._com = Com(tk=self._master)
+        self._com = Diaspora(tk=self._master)
         self._main_host = MainHost(self._app, self._com)
 
-    def _on_build(self):
+    def _build(self):
         self._body = tk.Frame(self._master)
         # top view
         top_view = TopView(self._body, self._com)
@@ -32,9 +32,3 @@ class MainView(View):
         # footer view
         bottom_view = BottomView(self._body, self._com)
         bottom_view.build_pack(fill=tk.X, padx=2, pady=2)
-
-    def _on_display(self):
-        pass
-
-    def _on_destroy(self):
-        pass

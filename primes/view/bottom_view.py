@@ -1,11 +1,11 @@
 import tkinter as tk
-from pyrustic.view import View
-from pyrustic.widget.toast import Toast
-from pyrustic.widget.confirm import Confirm
+from viewable import Viewable
+from megawidget.toast import Toast
+from megawidget.confirm import Confirm
 from primes.misc.events import Events
 
 
-class BottomView(View):
+class BottomView(Viewable):
 
     def __init__(self, master, com):
         super().__init__()
@@ -23,7 +23,7 @@ class BottomView(View):
         consumer = lambda event, data, self=self: self._set_button_clear()
         self._com.sub(Events.gui_end_displaying, consumer)
 
-    def _on_build(self):
+    def _build(self):
         self._body = tk.Frame(self._master)
         # footer left
         footer_left = self._layout_footer_left(self._body)
@@ -31,12 +31,6 @@ class BottomView(View):
         # footer right
         footer_right = self._layout_footer_right(self._body)
         footer_right.pack(side=tk.RIGHT)
-
-    def _on_display(self):
-        pass
-
-    def _on_destroy(self):
-        pass
 
     def _layout_footer_left(self, master):
         frame = tk.Frame(master)

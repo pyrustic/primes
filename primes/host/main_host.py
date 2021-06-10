@@ -1,4 +1,4 @@
-from pyrustic.threadom import Threadom
+from threadom import Threadom
 from primes.misc.events import Events
 from primes.core.primes_generator import PrimesGenerator
 
@@ -38,4 +38,5 @@ class MainHost:
         self._primes_generator.stop()
 
     def _on_user_click_exit(self, event, data):
+        self._primes_generator.stop()
         self._app.exit()
